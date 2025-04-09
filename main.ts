@@ -267,3 +267,6 @@ let mySprite = sprites.create(img`
     `, SpriteKind.Player)
 scroller.scrollBackgroundWithSpeed(-100, 0)
 controller.moveSprite(mySprite, 100, 100)
+game.onUpdate(function () {
+    music.play(music.stringPlayable("- - - - - - - - ", 120), music.PlaybackMode.UntilDone)
+})
